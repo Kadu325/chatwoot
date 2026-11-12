@@ -1,0 +1,19 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ozDsTop" x1="8" y1="8" x2="56" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#25B8FF"/>
+      <stop offset="100%" stop-color="#1677D2"/>
+    </linearGradient>
+    <linearGradient id="ozDsRight" x1="32" y1="12" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1677D2"/>
+      <stop offset="100%" stop-color="#7C52FF"/>
+    </linearGradient>
+    <linearGradient id="ozDsBottom" x1="12" y1="40" x2="52" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#7C52FF"/>
+    </linearGradient>
+  </defs>
+  <path d="M32 6L10 18.5V43.5L21 50V25L43 12.5L32 6Z" fill="url(#ozDsTop)"/>
+  <path d="M43 12.5L54 18.5V43.5L32 56L21 50L43 37.5V12.5Z" fill="url(#ozDsRight)"/>
+  <path d="M10 43.5L32 56L43 50L21 37.5V25L10 31V43.5Z" fill="url(#ozDsBottom)" opacity="0.9"/>
+</svg>
