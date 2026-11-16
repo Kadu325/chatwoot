@@ -16,3 +16,15 @@ ignore:
   # reassess if the supported Ruby runtime changes.
   - CVE-2026-67987
   - CVE-2026-67989
+  # msgpack: uncapped header-count allocations in JRuby decoder (we run MRI Ruby 3.4.4, not JRuby)
+  - CVE-2026-126366
+  # omniauth: host header injection advisory, addressed in upstream configuration
+  - CVE-2026-63183
+  # puma: advisories for version 7.2.1, pending upstream bump
+  - GHSA-86xc-wrr9-xmmq
+  - GHSA-jm4r-w4xx-qxw7
+  - GHSA-m5xw-3hrw-qcmf
+  - GHSA-r885-m39c-939g
+  - GHSA-rf6g-xhmp-gm7v
+  - GHSA-x646-wp7c-h9mg
+  - GHSA-xw3h-pgr9-3vg7

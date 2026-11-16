@@ -35,6 +35,7 @@ const mountComponent = props =>
         },
       },
       stubs: {
+        OmniZonAuthBackground: false,
         RouterLink: {
           template: '<a><slot /></a>',
         },
