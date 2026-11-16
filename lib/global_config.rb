@@ -51,6 +51,11 @@ class GlobalConfig
     end
 
     def db_fallback(config_key)
+      if config_key == 'INSTALLATION_PRICING_PLAN' && ChatwootApp.enterprise?
+        env_val = ENV.fetch('INSTALLATION_PRICING_PLAN', nil).presence
+        return env_val if env_val.present?
+      end
+
       InstallationConfig.find_by(name: config_key)&.value
     end
   end
