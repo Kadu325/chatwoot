@@ -22,7 +22,7 @@ module ChatwootApp
   end
 
   def self.self_hosted_enterprise?
-    enterprise? && !chatwoot_cloud? && GlobalConfig.get_value('INSTALLATION_PRICING_PLAN') == 'enterprise'
+    enterprise? && !chatwoot_cloud? && (%w[enterprise].include?(ChatwootHub.pricing_plan) || GlobalConfig.get_value('INSTALLATION_PRICING_PLAN') == 'enterprise')
   end
 
   def self.self_hosted_paid?
